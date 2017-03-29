@@ -21,14 +21,21 @@ class Toast: UIView {
     private var timeInterval: Double = 2
     private var verticalOffset = UIScreen.main.bounds.height / 3
     
-    static func show(container: UIView, text: String, timeInterval: Double = 2, verticalOffset: CGFloat? = nil, completion: (() -> ())? = nil) {
+    static func show(container: UIView,
+                     text: String,
+                     timeInterval: Double = 2,
+                     verticalOffset: CGFloat? = nil,
+                     completion: (() -> ())? = nil) {
         let toast: Toast = UIView.createFromXib()
         toast.setData(text: text, timeInterval: timeInterval, verticalOffset: verticalOffset, completion: completion)
         toast.addConstraints(container: container)
         toast.show()
     }
     
-    private func setData(text: String, timeInterval: Double, verticalOffset: CGFloat? = nil, completion: (() -> ())? = nil) {
+    private func setData(text: String,
+                         timeInterval: Double,
+                         verticalOffset: CGFloat? = nil,
+                         completion: (() -> ())? = nil) {
         self.text = text
         self.timeInterval = timeInterval
         if let verticalOffset = verticalOffset { self.verticalOffset = verticalOffset }
@@ -55,17 +62,41 @@ class Toast: UIView {
     private func addConstraints(container: UIView) {
         container.addSubview(self)
         translatesAutoresizingMaskIntoConstraints = false
-        let horizontalConstraint = NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: container, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0)
+        let horizontalConstraint = NSLayoutConstraint(item: self,
+                                                      attribute: NSLayoutAttribute.centerX,
+                                                      relatedBy: NSLayoutRelation.equal,
+                                                      toItem: container,
+                                                      attribute: NSLayoutAttribute.centerX,
+                                                      multiplier: 1,
+                                                      constant: 0)
         container.addConstraint(horizontalConstraint)
         
         let horizontalMargin: CGFloat = 8
-        let leadingConstraint = NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.leading, relatedBy: NSLayoutRelation.greaterThanOrEqual, toItem: container, attribute: NSLayoutAttribute.leading, multiplier: 1, constant: horizontalMargin)
+        let leadingConstraint = NSLayoutConstraint(item: self,
+                                                   attribute: NSLayoutAttribute.leading,
+                                                   relatedBy: NSLayoutRelation.greaterThanOrEqual,
+                                                   toItem: container,
+                                                   attribute: NSLayoutAttribute.leading,
+                                                   multiplier: 1,
+                                                   constant: horizontalMargin)
         container.addConstraint(leadingConstraint)
         
-        let trailingConstraint = NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.trailing, relatedBy: NSLayoutRelation.lessThanOrEqual, toItem: container, attribute: NSLayoutAttribute.trailing, multiplier: 1, constant: horizontalMargin)
+        let trailingConstraint = NSLayoutConstraint(item: self,
+                                                    attribute: NSLayoutAttribute.trailing,
+                                                    relatedBy: NSLayoutRelation.lessThanOrEqual,
+                                                    toItem: container,
+                                                    attribute: NSLayoutAttribute.trailing,
+                                                    multiplier: 1,
+                                                    constant: horizontalMargin)
         container.addConstraint(trailingConstraint)
         
-        let verticalConstraint = NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: container, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: -verticalOffset)
+        let verticalConstraint = NSLayoutConstraint(item: self,
+                                                    attribute: NSLayoutAttribute.bottom,
+                                                    relatedBy: NSLayoutRelation.equal,
+                                                    toItem: container,
+                                                    attribute: NSLayoutAttribute.bottom,
+                                                    multiplier: 1,
+                                                    constant: -verticalOffset)
         container.addConstraint(verticalConstraint)
     }
     
