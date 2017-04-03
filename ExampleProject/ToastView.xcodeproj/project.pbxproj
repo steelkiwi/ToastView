@@ -7,27 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7722D0AC1E9231FB007F39E3 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7722D0AB1E9231FB007F39E3 /* Toast.swift */; };
 		783374441E8BE52F00DBB561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783374431E8BE52F00DBB561 /* AppDelegate.swift */; };
 		783374461E8BE53000DBB561 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783374451E8BE53000DBB561 /* ViewController.swift */; };
 		783374491E8BE53100DBB561 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783374471E8BE53100DBB561 /* Main.storyboard */; };
-		7833744B1E8BE53200DBB561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7833744A1E8BE53200DBB561 /* Assets.xcassets */; };
 		7833744E1E8BE53300DBB561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7833744C1E8BE53300DBB561 /* LaunchScreen.storyboard */; };
-		786194F31E8BE6BB004E4B34 /* Toast.xib in Resources */ = {isa = PBXBuildFile; fileRef = 786194F11E8BE6BB004E4B34 /* Toast.xib */; };
-		786194F41E8BE6BB004E4B34 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786194F21E8BE6BB004E4B34 /* Toast.swift */; };
-		786194F71E8BE718004E4B34 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786194F61E8BE718004E4B34 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7722D0AB1E9231FB007F39E3 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = ../../Toast.swift; sourceTree = "<group>"; };
 		783374401E8BE52D00DBB561 /* ToastView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToastView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		783374431E8BE52F00DBB561 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		783374451E8BE53000DBB561 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		783374481E8BE53100DBB561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7833744A1E8BE53200DBB561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7833744D1E8BE53300DBB561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7833744F1E8BE53500DBB561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		786194F11E8BE6BB004E4B34 /* Toast.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Toast.xib; sourceTree = "<group>"; };
-		786194F21E8BE6BB004E4B34 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
-		786194F61E8BE718004E4B34 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,25 +54,14 @@
 		783374421E8BE52D00DBB561 /* ToastView */ = {
 			isa = PBXGroup;
 			children = (
-				786194F51E8BE6C3004E4B34 /* Sample */,
-				786194F11E8BE6BB004E4B34 /* Toast.xib */,
-				786194F21E8BE6BB004E4B34 /* Toast.swift */,
-				786194F61E8BE718004E4B34 /* Extensions.swift */,
+				7722D0AB1E9231FB007F39E3 /* Toast.swift */,
 				783374431E8BE52F00DBB561 /* AppDelegate.swift */,
-				7833744A1E8BE53200DBB561 /* Assets.xcassets */,
 				7833744C1E8BE53300DBB561 /* LaunchScreen.storyboard */,
+				783374471E8BE53100DBB561 /* Main.storyboard */,
+				783374451E8BE53000DBB561 /* ViewController.swift */,
 				7833744F1E8BE53500DBB561 /* Info.plist */,
 			);
 			path = ToastView;
-			sourceTree = "<group>";
-		};
-		786194F51E8BE6C3004E4B34 /* Sample */ = {
-			isa = PBXGroup;
-			children = (
-				783374451E8BE53000DBB561 /* ViewController.swift */,
-				783374471E8BE53100DBB561 /* Main.storyboard */,
-			);
-			name = Sample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +124,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7833744E1E8BE53300DBB561 /* LaunchScreen.storyboard in Resources */,
-				786194F31E8BE6BB004E4B34 /* Toast.xib in Resources */,
-				7833744B1E8BE53200DBB561 /* Assets.xcassets in Resources */,
 				783374491E8BE53100DBB561 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,9 +136,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				783374461E8BE53000DBB561 /* ViewController.swift in Sources */,
-				786194F41E8BE6BB004E4B34 /* Toast.swift in Sources */,
+				7722D0AC1E9231FB007F39E3 /* Toast.swift in Sources */,
 				783374441E8BE52F00DBB561 /* AppDelegate.swift in Sources */,
-				786194F71E8BE718004E4B34 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
